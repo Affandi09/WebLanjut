@@ -1,4 +1,20 @@
+<h1>Tabel Mahasiswa</h1>
+<table>
+    <tr>
+        <td>
+        Nama
+        </td>
+        <td>
+        NPM
+        </td>
+    </tr>
+    <tr>
 
-    <h1><?= $nama ?></h1>
-    <br>
-    <h1><?= $npm ?></h1>
+        <td>
+            Gilang 
+        </td>
+        <td>
+            1817051075
+        </td>
+    </tr>
+</table>

@@ -32,6 +32,23 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
+
+//show data dari 1 fungsi di controller tanpa parameter
+$routes->get('/mahasiswa', 'Helloworld::show');
+
+//menggunakan 2 parameter pada fungsi - Controller
+$routes->get('/coba/(:any)/(:num)', 'Helloworld::index/$1/$2');
+
+//menggunakan variabel global
+$routes->get('/Hello', 'Hello::global');
+
+//menampilkan halaman index.php
+$routes->get('/Gilang', function () {
+	echo view("mahasiswa/header");
+	echo view("mahasiswa/index");
+	echo view("mahasiswa/footer");
+});
+
 /**
  * --------------------------------------------------------------------
  * Additional Routing
